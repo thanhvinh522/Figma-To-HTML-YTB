@@ -1,0 +1,14 @@
+* {
+  /* border-box giúp khi muốn tăng hoặc giảm kích thước phần tử sẽ không bị vỡ */
+  box-sizing: border-box;
+}
+
+/* quy đổi một rem = 10px  */
+html {
+  font-size: 62.5%;
+}
+
+/* khôi phục lại cỡ chữ mặc định tính theo rem */
+body {
+  font-size: 1.6rem;
+}
