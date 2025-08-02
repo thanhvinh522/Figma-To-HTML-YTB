@@ -11,4 +11,99 @@ html {
 /* khôi phục lại cỡ chữ mặc định tính theo rem */
 body {
   font-size: 1.6rem;
+  /* áp dụng font chủ đạo */
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===============common==== thuộc tính áp dụng chung cho cả trang web */
+a {
+  text-decoration: none;
+}
+
+/* chiều rộng của trang web */
+.main-content {
+  /* áp dụng chiều rộng cố định là 1170px  */
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* code chung cho phần button nút bấm */
+.btn {
+  /* vì thẻ a là thẻ inline nên cần chuyển sang block để chữ k bị dính sát vào nền */
+  display: block;
+  padding: 0px 16px;
+  line-height: 50px;
+  min-width: 118px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+/* ==============code phần header=============== */
+.header {
+  background: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+  /* max-width: 456.737px; */
+}
+
+/* xoay ngang phần nav */
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  /* background-color: cyan; */
+  padding: 8px 21px;
+
+  position: relative;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  /* text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.6); */
+  text-shadow: 1px 0 0 currentColor;
+  /* color: #000; */
+}
+
+.nav li.active a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
+  /* top: 6px; */
+  bottom: 6px;
+  left: 21px;
+}
+
+.header .btn-sign-up {
+  /* top: 36px; */
+  min-width: 144px;
+  height: 50px;
+  margin-left: 49px;
 }
