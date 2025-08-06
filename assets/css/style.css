@@ -44,6 +44,17 @@ a {
   margin-right: auto;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
 /* code chung cho phần button nút bấm */
 .btn {
   /* vì thẻ a là thẻ inline nên cần chuyển sang block để chữ k bị dính sát vào nền */
@@ -62,6 +73,10 @@ a {
 .btn:hover {
   opacity: 0.85;
   cursor: pointer;
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 /* ==============code phần header=============== */
@@ -355,6 +370,7 @@ a {
 }
 
 .popular .course-items {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
