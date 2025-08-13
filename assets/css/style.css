@@ -374,6 +374,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  transition: box-shadow 0.2s ease;
 }
 
 .popular .course-items:hover {
@@ -590,4 +591,106 @@ a {
 .features-2nd .body .images img {
   width: 470px;
   height: 440px;
+}
+
+/* ===============blogs================ */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 175%; /* 175% */
+  width: 448px;
+  margin: 16px auto 0;
+}
+
+.blogs .blog-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.blogs .item {
+  width: 33.33%;
+  border-radius: 16px;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.blogs .item:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.blogs .item .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .item .date {
+  position: relative;
+  padding-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 186%; /* 185.714% */
+}
+
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--primary-color);
+  margin-right: 4px;
+  border-radius: 999px;
+}
+
+.blogs .item .date::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* width: 160px; */
+  right: -27px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blogs .item .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 175%; /* 175% */
+  margin-top: 12px;
+}
+
+.blogs .item .btn {
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--primary-color);
+  transition: background 0.2s ease;
+  margin-top: 12px;
+}
+
+.blogs .item .btn:hover {
+  background: #000;
 }
