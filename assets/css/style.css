@@ -521,7 +521,7 @@ a {
   line-height: 154%; /* 153.846% */
 }
 
-/* ===============features================ */
+/* ===============features 1================ */
 .features {
   margin-top: 135px;
   padding: 65px 0;
@@ -567,4 +567,27 @@ a {
   width: 137px;
   height: 50px;
   background: var(--primary-color);
+  transition: background 0.2s ease;
+}
+
+.features .cta-btn:hover {
+  background: #000;
+}
+
+/* ===============features 2================ */
+.features-2nd {
+  margin-top: 70px;
+}
+
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+  width: 49%;
+}
+
+.features-2nd .body .images img {
+  width: 470px;
+  height: 440px;
 }
